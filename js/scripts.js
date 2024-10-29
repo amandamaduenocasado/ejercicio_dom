@@ -3,12 +3,16 @@
 
 const startPointElement = document.getElementById('start-point');
 
-console.log(startPointElement.parentElement);
+console.log(startPointElement);
 
-/* console.log(`Soy un h3 con el id ${startPointElement} con el id ${h3.id} la clase ${h3.classList} y la etiqueta ${textContent.h3}.`);
+console.log(
+  `Soy un h3 con el id ${startPointElement.id} y la clase ${startPointElement.classList} y la etiqueta ${startPointElement.tagName}.`
+);
 
-console.log(`Mi padre es un header con ${startPointElement.parentElement} con el id ${startPointElement.parentElement.id} la clase ${startPointElement.parentEleme[0]} y la etiqueta ${textContent.header}.`);
+console.log(
+  `Mi padre es un header con ${startPointElement.parentElement.tagName} con el id ${startPointElement.parentElement.id} la clase ${startPointElement.parentElement.classList} y la etiqueta ${startPointElement.parentElement.tagName}.`
+);
 
-console.log(`Mi hermano es un h2 con ${startPointElement.previousElementSibling} con el id ${startPointElement.subtitle.id} la clase ${startPointElement.subtitle} y la etiqueta ${textContent.h2}.`);
-
-*/
+console.log(
+  `Mi hermano es un h2 con ${startPointElement.previousElementSibling.tagName} con el id ${startPointElement.previousElementSibling.id} la clase ${startPointElement.previousElementSibling.classList} y la etiqueta ${startPointElement.previousElementSibling.tagName}.`
+);
