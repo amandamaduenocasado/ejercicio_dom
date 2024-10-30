@@ -3,16 +3,23 @@
 
 const startPointElement = document.getElementById('start-point');
 
-console.log(startPointElement);
+console.log(startPointElement.parentElement);
 
 console.log(
-  `Soy un h3 con el id ${startPointElement.id} y la clase ${startPointElement.classList} y la etiqueta ${startPointElement.tagName}.`
+  `Soy un h3 con el id ${startPointElement.id}, la clase ${startPointElement.classList}, la etiqueta ${startPointElement.tagName}, el contenido ${startPointElement.textContent}.`
 );
 
 console.log(
-  `Mi padre es un header con ${startPointElement.parentElement.tagName} con el id ${startPointElement.parentElement.id} la clase ${startPointElement.parentElement.classList} y la etiqueta ${startPointElement.parentElement.tagName}.`
+  `Mi segundo hermano es un h2 con el id ${startPointElement.previousElementSibling.id}, la clase ${startPointElement.previousElementSibling.classList}, la etiqueta ${startPointElement.previousElementSibling.tagName} el contenido ${startPointElement.previousElementSibling.textContent}.`
+); 
+
+console.log(
+  `Mi primer hermano es un h1 con el id ${startPointElement.previousElementSibling.previousElementSibling.id}, la clase ${startPointElement.previousElementSibling.previousElementSibling.classList}, la etiqueta ${startPointElement.previousElementSibling.previousElementSibling.tagName} el contenido ${startPointElement.previousElementSibling.previousElementSibling.textContent}.`
 );
 
 console.log(
-  `Mi hermano es un h2 con ${startPointElement.previousElementSibling.tagName} con el id ${startPointElement.previousElementSibling.id} la clase ${startPointElement.previousElementSibling.classList} y la etiqueta ${startPointElement.previousElementSibling.tagName}.`
+  `Mi padre es un header con el id ${startPointElement.parentElement.id}, la clase ${startPointElement.parentElement.classList}, la etiqueta ${startPointElement.parentElement.tagName}, el contenido ${startPointElement.parentElement.textContent}.`
 );
+
+
+
